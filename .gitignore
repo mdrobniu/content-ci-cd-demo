@@ -1,0 +1,18 @@
+*.pyc
+.DS_Store
+.vscode
+
+CommonServerUserPython.py
+
+# neo4j
+neo4j-data
+
+# log files
+demisto_sdk_debug.log
+demisto_sdk_debug.log.*
+*.log
+
+# Environment and reports
+.demisto-sdk-report
+.env
+.venv
