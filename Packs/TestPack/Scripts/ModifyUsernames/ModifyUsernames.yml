@@ -1,0 +1,35 @@
+args:
+- description: List of usernames
+  name: value
+  required: true
+- name: client_domain
+  required: true
+commonfields:
+  id: 'ModifyUsernames'
+  version: -1
+contentitemexportablefields:
+  contentitemfields:
+    definitionid: ""
+    fromServerVersion: ""
+    itemVersion: ""
+    packID: ""
+    packName: Eskom - Splunk - Excessive Failed Logins VPN v2
+    prevname: ""
+    toServerVersion: ""
+dockerimage: demisto/python3:3.10.14.92207
+enabled: true
+engineinfo: {}
+mainengineinfo: {}
+name: ModifyUsernames
+outputs:
+- contextPath: ModifiedUsernames.Email
+  type: unknown
+pswd: ""
+runas: DBotWeakRole
+runonce: false
+script: ''
+scripttarget: 0
+subtype: python3
+tags:
+- transformer
+type: python
